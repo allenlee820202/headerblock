@@ -13,14 +13,14 @@ pilot:
 experimental:
   plugins:
     headerblock:
-      moduleName: "github.com/nhomchatgpt/headerblock"
+      moduleName: "github.com/allenlee820202/headerblock"
       version: "v0.0.3"
 ```
 
 ### Docker-Compose
 
 ```yaml
-      - "--experimental.plugins.headerblock.modulename=github.com/nhomchatgpt/headerblock"
+      - "--experimental.plugins.headerblock.modulename=github.com/allenlee820202/headerblock"
       - "--experimental.plugins.headerblock.version=v0.0.3"
 ```
 
@@ -65,7 +65,7 @@ http:
       - "--entrypoints.web.address=:80"
       - "--entrypoints.web-secure.address=:443"
       - "--entrypoints.web-secure.http.middlewares=headerblock@file${TRAEFIK_PLUGINS:-}"
-      - "--experimental.plugins.headerblock.modulename=github.com/nhomchatgpt/headerblock"
+      - "--experimental.plugins.headerblock.modulename=github.com/allenlee820202/headerblock"
       - "--experimental.plugins.headerblock.version=v0.0.3"
 ```
 
